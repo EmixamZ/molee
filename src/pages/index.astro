@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Molee Home Page">
+  <main
+    class="flex flex-col lg:flex-row w-full gap-4 px-4 md:px-20 lg:px-40 justify-evenly items-center"
+  >
+    <!-- LEFT PAN -->
+    <div class="flex flex-col max-w-lg gap-4">
+      <p class="text-brand text-2xl font-semibold">POUR LES YEUX DE MOLEE</p>
+      <p class="text-subtitle text-lg font-semibold text-justify">
+        Chaque gâteau que nous concevons est une véritable œuvre d'art, fabriqué
+        avec amour et souci du détail. Nous allions expertise culinaire et
+        imagination pour donner vie à des créations sur mesure qui
+        émerveilleront vos papilles et éblouiront vos invités. Que ce soit pour
+        un mariage, un anniversaire ou tout autre événement spécial, nous sommes
+        là pour transformer vos rêves sucrés en réalité. Découvrez l'harmonie
+        parfaite entre saveurs exquises, textures somptueuses et design élégant.
+        Faites confiance à notre entreprise pour ajouter une touche de magie
+        sucrée à vos célébrations les plus précieuses.
+      </p>
+    </div>
+    <!-- MIDDLE PLAN -->
+    <div class="relative w-3/4 md:w-1/2 lg:w-1/4 h-1/2">
+      <img
+        src="src/images/main_cake.jpg"
+        class="w-full rounded-full"
+        alt="Main Cake"
+      />
+    </div>
+  </main>
+</Layout>
