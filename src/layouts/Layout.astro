@@ -21,19 +21,19 @@ const currentPath = Astro.url.pathname;
     <div class="flex-grow">
       <nav class="flex items-center py-2 px-4 ">
         <div class="flex lg:pl-8 py-8">
-          <img src="molee/assets/logo.png" alt="Logo" class="h-16" />
+          <img src="/molee/assets/logo.png" alt="Logo" class="h-16" />
         </div>
         <div
           class="flex w-full justify-center items-center gap-4 lg:gap-8 font-semibold text-subtitle space-x-2"
         >
-          <a class={currentPath === "/" ? "text-primary" : ""} href="/">Home</a>
+          <a class={currentPath === "/molee/" ? "text-primary" : ""} href="/molee/">Home</a>
           <a
-            class={currentPath === "/gallery" ? "text-primary" : ""}
-            href="/gallery">Gallerie</a
+            class={currentPath === "/molee/gallery/" ? "text-primary" : ""}
+            href="/molee/gallery/">Gallerie</a
           >
           <a
-            class={currentPath === "/contact" ? "text-primary" : ""}
-            href="/contact">Contact</a
+            class={currentPath === "/molee/contact/" ? "text-primary" : ""}
+            href="/molee/contact/">Contact</a
           >
         </div>
       </nav>
