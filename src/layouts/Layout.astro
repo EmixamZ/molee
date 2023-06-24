@@ -13,13 +13,13 @@ const currentPath = Astro.url.pathname;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="molee/favicon.ico" />
+    <link rel="icon" href="/molee/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body class="flex flex-col">
     <div class="flex-grow">
-      <nav class="flex items-center py-2 px-4 ">
+      <nav class="flex items-center px-4 ">
         <div class="flex lg:pl-8 py-8">
           <img src="/molee/assets/logo.png" alt="Logo" class="h-16" />
         </div>
@@ -39,7 +39,7 @@ const currentPath = Astro.url.pathname;
       </nav>
       <slot />
     </div>
-    <footer class="h-14 bg-secondary flex justify-center items-center gap-4">
+    <footer class="p-4 bg-secondary flex justify-center items-center gap-4">
       <p>Pour les yeux de Molee - {new Date().getFullYear()}</p>
       <a href="https://www.instagram.com/pour_les_yeux_de_molee/">
         <svg
