@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import mainCake from '../../public/assets/main_cake.jpg'
+import Image from "astro/components/Image.astro";
 ---
 
 <Layout title="Molee Home Page">
@@ -22,12 +25,8 @@ import Layout from "../layouts/Layout.astro";
       </p>
     </div>
     <!-- MIDDLE PLAN -->
-    <div class="relative w-3/4 md:w-1/2 lg:w-1/4 h-1/2">
-      <img
-        src="/molee/assets/main_cake.jpg"
-        class="w-full rounded-full shadow"
-        alt="Main Cake"
-      />
+    <div class="relative w-3/4 md:w-1/2 lg:w-1/4 h-2/3">
+      <Image src={mainCake} alt={'Main Cake'} class="w-full shadow-lg rounded-full h-full object-cover"/>
     </div>
   </main>
 </Layout>

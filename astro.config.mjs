@@ -6,5 +6,8 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site:'https://emixamz.github.io',
   base:'/molee',
+  experimental:{
+    assets:true
+  },
   integrations: [tailwind()]
 });
